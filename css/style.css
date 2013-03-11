@@ -1,0 +1,62 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;;
+	font-weight: lighter;
+	font-size: 18pt;
+}
+p{
+	font-size: 18pt;
+}
+h1{
+	font-size: 40pt;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	min-width: 1000px;
+}
+#logo{
+	font-size: 75pt;
+}
+#topmenu{
+
+	height: 175px;
+	font-size: 30pt;
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 10px 10px 20px 10px;
+	background: rgba(46,50,52,1.0);
+	/*-webkit-font-smoothing: antialiased;
+	-webkit-border-radius: 5px 5px 0 0;*/
+	border-radius: 5px 5px 0 0;
+	color: white;
+	margin-bottom: 25px;
+}
+#topmenutable{
+	width: 100%;
+}
+#topmenu td{
+	color: white;
+	width: 16%;
+	text-align: center;
+	font-size: 25pt;
+
+}
+
+
+#team{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#documents{
+	text-align: center;
+	margin-right: 50px;
+
+
+}
+#documentsTable{
+
+}
+#documents td{
+	font-size: 25pt;
+}

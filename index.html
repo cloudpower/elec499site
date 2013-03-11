@@ -1,0 +1,142 @@
+<html>
+
+<head>
+	<title>cloudpower</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+
+<body>
+<div class="wrapper">
+	<div id="topmenu">
+		<div id="logo">
+			C L O U D P O W E R
+		</div>
+
+		<table id="topmenutable">
+			<tr>
+				<td class="top" id="homebar">HOME</td>
+				<td class="top" id="problembar">PROBLEM</td>
+				<td class="top" id="solutionbar">SOLUTION</td>
+				<td class="top" id="documentsbar">DOCUMENTS</td>
+				<td class="top" id="teambar">THE TEAM</td>
+				<td class="top" id="contactbar">CONTACT</td>
+			</tr>
+		</table>
+	</div>
+<!-- %%%%%%%%%HOME DIV%%%%%%%%%%% -->
+	<div id="home">
+		This is the home page
+	</div>
+<!-- %%%%%%%%%PROBLEM DIV%%%%%%%%%%% -->
+	<div id="problem">
+		What is the problem
+	</div>
+<!-- %%%%%%%%%SOLUTION DIV%%%%%%%%%%% -->
+	<div id="solution">
+		a + b = c
+	</div>
+<!-- %%%%%%%%%DOCUMENTS DIV%%%%%%%%%%% -->
+	<div id="documents">
+		The following were the required deliverables for our project.</br></br>
+		<div id="documentsTable">
+			<table align=center>
+				<tr><td>
+					<ol>
+						<li> <a href="docs/ELEC499ProgressReport1.pdf"> Progress Report #1 </a></li>
+						<li> <a href="docs/ELEC499ProgressReport2.pdf"> Progress Report #2</a></li>
+						<li> <a href="docs/progresspresentation.pdf"> Mid semester Progress Presentation</a></li>
+					</ol>
+				</td></tr>
+			</table>
+		</div>
+
+	</div>
+
+<!-- %%%%%%%%%TEAM DIV%%%%%%%%%%% -->
+	<div id="team">
+		<table>
+			<tr>
+				<td style="width:70%;">
+				<h1>Mike Anderson</h1>
+					<p>
+						Computer engineering student. 
+					</p>
+				<h1>Drew Harris</h1>
+					<p>
+						Electrical engineering student. 
+					</p>
+				<h1>Carl Stubens</h1>
+					<p>
+						Software engineering student. 
+					</p>
+				<h1>Nathan Willson</h1>
+					<p>
+						Electrical engineering student. 
+					</p>
+				</td>
+				<td>
+					<img src="teamphoto.jpg"></img>
+				</td>
+			</tr>
+		</table>
+	</div>
+<!-- %%%%%%%%%CONTACT DIV%%%%%%%%%%% -->	
+	<div id="contact">
+		This is the contact info.
+	</div>
+
+</div> <!-- end of wrapper div-->
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+pageNames  = [ "home", "problem", "solution", "documents" ,"team","contact"]
+
+$(document).ready(function()
+{
+	$('#homebar').trigger('click');
+});
+
+function hideall(){
+	for(var i = 0; i<pageNames.length;i++){
+		$("#" + pageNames[i]).hide();
+	}
+}
+
+$("#homebar").on('click',function(){
+	hideall();
+	$("#home").show();
+});
+$("#problembar").on('click',function(){	
+	hideall();
+	$("#problem").show();
+});
+$("#solutionbar").on('click',function(){	
+	hideall();
+	$("#solution").show();
+});
+$("#documentsbar").on('click',function(){	
+	hideall();
+	$("#documents").show();
+});
+$("#teambar").on('click',function(){	
+	hideall();
+	$("#team").show();
+});
+$("#contactbar").on('click',function(){	
+	hideall();
+	$("#contact").show();
+});
+
+
+
+
+</script> 
+
+
+</body>
+
+
+</html>
