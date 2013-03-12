@@ -1,47 +1,69 @@
 <html>
 
 <head>
-	<title>cloudpower</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-
+	<title>CloudPower : A Wifi-Enabled Smart Power Bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Other Style Imports -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="wrapper">
-	<div id="topmenu">
-		<div id="logo">
-			C L O U D P O W E R
-		</div>
-
-		<table id="topmenutable">
-			<tr>
-				<td class="top" id="homebar">HOME</td>
-				<td class="top" id="problembar">PROBLEM</td>
-				<td class="top" id="solutionbar">SOLUTION</td>
-				<td class="top" id="documentsbar">DOCUMENTS</td>
-				<td class="top" id="teambar">THE TEAM</td>
-				<td class="top" id="contactbar">CONTACT</td>
-			</tr>
-		</table>
+	<div class="masthead">
+		<p class="huge">
+			Control your power usage from the cloud.
+		</p>
 	</div>
+	<div id="nav-wrap">
+		<div id="main-nav" class="affix-top" data-spy="affix" data-offset-top="450">
+			<div class="navbar navbar-inverse">
+				<div id="main-nav-bar-inner" class="navbar-inner">
+					<ul class="nav">
+						<li><a href="#demo">Demo</a></li>
+						<li><a href="#problem">Problem</a></li>
+						<li><a href="#solution">Solution</a></li>
+						<li><a href="#documents">Documents</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
 <!-- %%%%%%%%%HOME DIV%%%%%%%%%%% -->
-	<div id="home">
-		This is the home page
+	<div class="box">
+		<h1><span id="demo"></span>Demo</h1>
+		<div class="row">
+			<div class="span7 bigger">
+				Next Demo Video Goes Here
+			</div>
+			<div class="span5">
+				This is some text about our demo video
+				<div class= "big">
+					Try out the demo api now.<br />
+  					<a href="http://api.gocloudpowered.com">api.gocloudpowered.com</a>
+				</div>
+			</div>
+		</div>
 	</div>
 <!-- %%%%%%%%%PROBLEM DIV%%%%%%%%%%% -->
-	<div id="problem">
-		What is the problem
+	<div class="box">
+		<h1><span id="problem"></span>Problem</h1>
+		What is the problem?
 	</div>
 <!-- %%%%%%%%%SOLUTION DIV%%%%%%%%%%% -->
-	<div id="solution">
+	<div class="box">
+		<h1><span id="solution"></span>Solution</h1>
 		a + b = c
 	</div>
 <!-- %%%%%%%%%DOCUMENTS DIV%%%%%%%%%%% -->
-	<div id="documents">
+	<div class="box">
+		<h1><span id="documents"></span>Documents</h1>
 		The following were the required deliverables for our project.</br></br>
 		<div id="documentsTable">
-			<table align=center>
+			<table>
 				<tr><td>
 					<ol>
 						<li> <a href="docs/ELEC499ProgressReport1.pdf"> Progress Report #1 </a></li>
@@ -55,42 +77,51 @@
 	</div>
 
 <!-- %%%%%%%%%TEAM DIV%%%%%%%%%%% -->
-	<div id="team">
+	<div class="box">
+		<h1><span id="team"></span>Team</h1>
 		<table>
 			<tr>
 				<td style="width:70%;">
-				<h1>Mike Anderson</h1>
+				<h3>Mike Anderson</h3>
 					<p>
 						Computer engineering student. 
 					</p>
-				<h1>Drew Harris</h1>
+				<h3>Drew Harris</h3>
 					<p>
 						Electrical engineering student. 
 					</p>
-				<h1>Carl Stubens</h1>
+				<h3>Carl Stubens</h3>
 					<p>
 						Software engineering student. 
 					</p>
-				<h1>Nathan Willson</h1>
+				<h3>Nathan Willson</h3>
 					<p>
 						Electrical engineering student. 
 					</p>
 				</td>
 				<td>
-					<img src="teamphoto.jpg"></img>
+					<img src="img/teamphoto.jpg"></img>
 				</td>
 			</tr>
 		</table>
 	</div>
 <!-- %%%%%%%%%CONTACT DIV%%%%%%%%%%% -->	
-	<div id="contact">
+	<div class="box">
+		<h1><span id="contact"></span>Contact</h1>
 		This is the contact info.
 	</div>
 
 </div> <!-- end of wrapper div-->
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+
 <script type="text/javascript">
+
+$('#nav-wrap').height($("#nav").height());
+$('#main-nav').affix({
+    offset: $('#main-nav').position()
+});
 
 pageNames  = [ "home", "problem", "solution", "documents" ,"team","contact"]
 
@@ -101,7 +132,7 @@ $(document).ready(function()
 
 function hideall(){
 	for(var i = 0; i<pageNames.length;i++){
-		$("#" + pageNames[i]).hide();
+		//$("#" + pageNames[i]).hide();
 	}
 }
 
@@ -133,7 +164,7 @@ $("#contactbar").on('click',function(){
 
 
 
-</script> 
+</script>
 
 
 </body>
