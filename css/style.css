@@ -104,8 +104,8 @@ h1 span{ position:absolute; top:-48px;}
 
 /* --- Page Styles --*/
 
-#documentsTable{
-
+.docTableItem{
+	font-size: 20pt;
 }
 #documents td{
 	font-size: 25pt;
