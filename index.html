@@ -1,235 +1,224 @@
 <html>
 
-<head>
-	<title>CloudPower : A Wifi-Enabled Smart Power Bar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Other Style Imports -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
+	<head>
+		<title>CloudPower : A Wifi-Enabled Smart Power Bar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <!-- Other Style Imports -->
+	    <link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
 
-<body>
-	<div class="masthead">
-		<p class="huge">
-			Control your power usage from the cloud.
-		</p>
-	</div>
-	<div id="nav-wrap">
-		<div id="main-nav" class="affix-top" data-spy="affix" data-offset-top="450">
-			<div class="navbar navbar-inverse">
-				<div id="main-nav-bar-inner" class="navbar-inner">
-					<ul class="nav">
-						<!-- <li><a href="#demo">Demo</a></li> -->
-						<li><a href="#problem">Problem</a></li>
-						<li><a href="#solution">Solution</a></li>
-						<li><a href="#documents">Documents</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+	<body>
+		<div class="masthead">
+			<p class="huge">
+				Control your power usage from the cloud.
+			</p>
+		</div>
+		<div id="nav-wrap">
+			<div id="main-nav" class="affix-top" data-spy="affix" data-offset-top="450">
+				<div class="navbar navbar-inverse">
+					<div id="main-nav-bar-inner" class="navbar-inner">
+						<ul class="nav">
+							<!-- <li><a href="#demo">Demo</a></li> -->
+							<li><a href="#problem">Problem</a></li>
+							<li><a href="#solution">Solution</a></li>
+							<li><a href="#documents">Documents</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-<!-- %%%%%%%%%HOME DIV%%%%%%%%%%% -->
-<!-- 	<div class="box">
-		<h1><span id="demo"></span>Demo</h1>
-		<div class="row">
-			<div class="span7 bigger">
+		<div class="container">
+	<!-- %%%%%%%%%HOME DIV%%%%%%%%%%% -->
+	<!-- 	<div class="box">
+			<h1><span id="demo"></span>Demo</h1>
+			<div class="row">
+				<div class="span7 bigger">
 
-				Next Demo Video Goes Here
-			</div>
-			<div class="span5">
-				<div class= "big">
-					Try out the demo api now.<br />
-  					<a href="http://api.gocloudpowered.com">api.gocloudpowered.com</a>
+					Next Demo Video Goes Here
 				</div>
-				</br>
-				<img src="img/cloudpower_1.jpg" style="width=30%;"></img>
-			</div>
-		</div>
-	</div> -->
-<!-- %%%%%%%%%PROBLEM DIV%%%%%%%%%%% -->
-	<div class="box">
-		<h1><span id="problem"></span>Problem</h1>
-		<div class="row">
-			<div class="span7 bigger">
-				<p style="text-align:left;">
-				<b>Control and monitor your connected
-				electronics from anywhere.</b></br></br>
-				The cloudpower system consists of a power-bar unit with electrical outlets and a remote service, allowing power usage logging and management of connected devices from anywhere. Usage data can be retrieved and graphed easily from a simple web application.
-				</p>
-			</div>
-			<div class="span5">
-				<div class= "big">
-					Try out the demo api now.<br />
-  					<a href="http://api.gocloudpowered.com">api.gocloudpowered.com</a>
+				<div class="span5">
+					<div class= "big">
+						Try out the demo api now.<br />
+	  					<a href="http://api.gocloudpowered.com">api.gocloudpowered.com</a>
+					</div>
+					</br>
+					<img src="img/cloudpower_1.jpg" style="width=30%;"></img>
 				</div>
-				<br>
-				<img src="img/browserandphones.png" style="width=30%;"></img>
+			</div>
+		</div> -->
+	<!-- %%%%%%%%%PROBLEM DIV%%%%%%%%%%% -->
+		<div class="box">
+			<h1><span id="problem"></span>Problem</h1>
+			<div class="row">
+				<div class="span7 bigger">
+					<p style="text-align:left;">
+					<b>Control and monitor your connected
+					electronics from anywhere.</b></br></br>
+					The cloudpower system consists of a power-bar unit with electrical outlets and a remote service, allowing power usage logging and management of connected devices from anywhere. Usage data can be retrieved and graphed easily from a simple web application.
+					</p>
+				</div>
+				<div class="span5">
+					<div class= "big">
+						Try out the demo api now.<br />
+	  					<a href="http://api.gocloudpowered.com">api.gocloudpowered.com</a>
+					</div>
+					<br>
+					<img src="img/browserandphones.png" style="width=30%;"></img>
+				</div>
 			</div>
 		</div>
-	</div>
-<!-- %%%%%%%%%SOLUTION DIV%%%%%%%%%%% -->
-	<div class="box">
-		<h1><span id="solution"></span>Solution</h1>
-		<div class="row">
-			<div class="span7 bigger">
-				<p style="text-align:left;">
-				The cloudpower unit controls and monitors connected devices using an Arduino, relays and a RMS currentvoltage monitoring circuit.</br></br>
+	<!-- %%%%%%%%%SOLUTION DIV%%%%%%%%%%% -->
+		<div class="box">
+			<h1><span id="solution"></span>Solution</h1>
+			<div class="row">
+				<div class="span7 bigger">
+					<p style="text-align:left;">
+					The cloudpower unit controls and monitors connected devices using an Arduino, relays and a RMS current-voltage monitoring circuit.</br></br>
 
-				A Raspberry Pi runs a custom node.js monitor application, establishing a bidirectional WebSocket connection between the remote node.js 
-				web server and the Arduino firmware. This setup permits operation behind proxies and routers.</br></br>
+					A Raspberry Pi runs a custom node.js monitor application, establishing a bidirectional WebSocket connection between the remote node.js 
+					web server and the Arduino firmware. This setup permits operation behind proxies and routers.</br></br>
 
-				The usage data is submitted to the remote web server and is stored in a database, retrievable via a web application and JSON API.
-				</p>
-			</div>
-			<div class="span5">
-				</br>
-				<img src="img/cloudpower_4.jpg" style="width=30%;"></img>
+					The usage data is submitted to the remote web server and is stored in a database, retrievable via a web application and JSON API.
+					</p>
+				</div>
+				<div class="span5">
+					</br>
+					<img src="img/cloudpower_4.jpg" style="width=30%;"></img>
+				</div>
 			</div>
 		</div>
-	</div>
-<!-- %%%%%%%%%DOCUMENTS DIV%%%%%%%%%%% -->
-	<div class="box">
-		<h1><span id="documents"></span>Documents</h1>
+	<!-- %%%%%%%%%DOCUMENTS DIV%%%%%%%%%%% -->
+		<div class="box">
+			<h1><span id="documents"></span>Documents</h1>
 
-		<div class="row">
-			<div class="span7 bigger">
-				The following were the required deliverables for our project.</br></br>
-				<div id="documentsTable">
+			<div class="row">
+				<div class="span7 bigger">
+					The following were the required deliverables for our project.</br></br>
+					<div id="documentsTable">
+						<ol>
+							<li class="docTableItem"> <a href="docs/ELEC499ProgressReport1.pdf"> Progress Report #1 </a></li>
+							<li class="docTableItem"> <a href="docs/ELEC499ProgressReport2.pdf"> Progress Report #2</a></li>
+							<li class="docTableItem"> <a href="docs/progresspresentation.pdf"> Mid semester Progress Presentation</a></li>
+							<li class="docTableItem"> <a href="docs/cloudpower-poster.pdf">Poster</a></li>
+							<li class="docTableItem"> <a href="docs/finalreport.pdf">Final Report</a></li>
+						</ol>
+					</div>
+				</div>
+				<div class="span5">
+					</br>
+					<img src="img/cloudpower_7.jpg" style="width=30%;"></img>
+				</div>
+			</div>
+
+			
+
+		</div>
+
+	<!-- %%%%%%%%%TEAM DIV%%%%%%%%%%% -->
+		<div class="box">
+			<h1><span id="team"></span>Team</h1>
+			<div class="row">
+				<div class="span7 bigger">
 					<table>
-						<tr><td>
-							<ol>
-								<li class="docTableItem"> <a href="docs/ELEC499ProgressReport1.pdf"> Progress Report #1 </a></li>
-								<li class="docTableItem"> <a href="docs/ELEC499ProgressReport2.pdf"> Progress Report #2</a></li>
-								<li class="docTableItem"> <a href="docs/progresspresentation.pdf"> Mid semester Progress Presentation</a></li>
-								<li class="docTableItem"> <a href="docs/cloudpower-poster.pdf">Poster</a></li>
-								<li class="docTableItem"> <a href="docs/finalreport.pdf">Final Report</a></li>
-							</ol>
-						</td></tr>
+						<tr>
+							<td style="width:70%;">
+							<h3>Mike Anderson</h3>
+								<p>
+									Computer engineering student. 
+								</p>
+							<h3>Drew Harris</h3>
+								<p>
+									Electrical engineering student. 
+								</p>
+							<h3>Carl Stubens</h3>
+								<p>
+									Software engineering student. 
+								</p>
+							<h3>Nathan Willson</h3>
+								<p>
+									Electrical engineering student. 
+								</p>
+							</td>
+						</tr>
 					</table>
 				</div>
-			</div>
-			<div class="span5">
-				</br>
-				<img src="img/cloudpower_7.jpg" style="width=30%;"></img>
-			</div>
-		</div>
-
-		
-
-	</div>
-
-<!-- %%%%%%%%%TEAM DIV%%%%%%%%%%% -->
-	<div class="box">
-		<h1><span id="team"></span>Team</h1>
-		<div class="row">
-			<div class="span7 bigger">
-				<table>
-					<tr>
-						<td style="width:70%;">
-						<h3>Mike Anderson</h3>
-							<p>
-								Computer engineering student. 
-							</p>
-						<h3>Drew Harris</h3>
-							<p>
-								Electrical engineering student. 
-							</p>
-						<h3>Carl Stubens</h3>
-							<p>
-								Software engineering student. 
-							</p>
-						<h3>Nathan Willson</h3>
-							<p>
-								Electrical engineering student. 
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="span5">
-				<img src="img/teamphoto.jpg" style="width=30%;"></img>
+				<div class="span5">
+					<img src="img/teamphoto.jpg" style="width=30%;"></img>
+				</div>
 			</div>
 		</div>
-	</div>
-<!-- %%%%%%%%%CONTACT DIV%%%%%%%%%%% -->	
-	<div class="box">
-		<h1><span id="contact"></span>Contact</h1>
-		
-		<div class="row">
-			<div class="span7 bigger">
-				The best way to contact us is by email at:</br></br>
+	<!-- %%%%%%%%%CONTACT DIV%%%%%%%%%%% -->	
+		<div class="box">
+			<h1><span id="contact"></span>Contact</h1>
+			
+			<div class="row">
+				<div class="span7 bigger">
+					The best way to contact us is by email at:<br/>
+					<a style="font-weight: bold; cursor: hand;">cloudpower@gmail.com</a>
+				</div>
+				<div class="span5">
+					<br/>
+					<img src="img/cloudpower_1.jpg" style="width=30%;"></img>
+				</div>
+			</div>
 
-				<a><b>cloudpower at gmail dot com</b></a>
-			</div>
-			<div class="span5">
-				</br>
-				<img src="img/cloudpower_1.jpg" style="width=30%;"></img>
-			</div>
 		</div>
 
-	</div>
+	</div> <!-- end of wrapper div-->
 
-</div> <!-- end of wrapper div-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript">
 
-<script type="text/javascript">
+		$('#nav-wrap').height($("#nav").height());
+		$('#main-nav').affix({
+		    offset: $('#main-nav').position()
+		});
 
-$('#nav-wrap').height($("#nav").height());
-$('#main-nav').affix({
-    offset: $('#main-nav').position()
-});
+		pageNames  = [ "home", "problem", "solution", "documents" ,"team","contact"]
 
-pageNames  = [ "home", "problem", "solution", "documents" ,"team","contact"]
+		$(document).ready(function()
+		{
+			$('#homebar').trigger('click');
+		});
 
-$(document).ready(function()
-{
-	$('#homebar').trigger('click');
-});
+		function hideall(){
+			for(var i = 0; i<pageNames.length;i++){
+				//$("#" + pageNames[i]).hide();
+			}
+		}
 
-function hideall(){
-	for(var i = 0; i<pageNames.length;i++){
-		//$("#" + pageNames[i]).hide();
-	}
-}
-
-$("#homebar").on('click',function(){
-	hideall();
-	$("#home").show();
-});
-$("#problembar").on('click',function(){	
-	hideall();
-	$("#problem").show();
-});
-$("#solutionbar").on('click',function(){	
-	hideall();
-	$("#solution").show();
-});
-$("#documentsbar").on('click',function(){	
-	hideall();
-	$("#documents").show();
-});
-$("#teambar").on('click',function(){	
-	hideall();
-	$("#team").show();
-});
-$("#contactbar").on('click',function(){	
-	hideall();
-	$("#contact").show();
-});
+		$("#homebar").on('click',function(){
+			hideall();
+			$("#home").show();
+		});
+		$("#problembar").on('click',function(){	
+			hideall();
+			$("#problem").show();
+		});
+		$("#solutionbar").on('click',function(){	
+			hideall();
+			$("#solution").show();
+		});
+		$("#documentsbar").on('click',function(){	
+			hideall();
+			$("#documents").show();
+		});
+		$("#teambar").on('click',function(){	
+			hideall();
+			$("#team").show();
+		});
+		$("#contactbar").on('click',function(){	
+			hideall();
+			$("#contact").show();
+		});
 
 
-
-
-</script>
-
-
-</body>
-
-
+	</script>
+	</body>
 </html>
